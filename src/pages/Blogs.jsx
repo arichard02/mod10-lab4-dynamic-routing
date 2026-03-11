@@ -7,13 +7,12 @@ function Blogs() {
       <h2>Blog Posts</h2>
 
       <ul style={{ listStyleType: "none", padding: 0 }}>
-  {posts.map(post => (
-    <li key={post.id}>
-      <Link to={`/blog/${post.slug}`}>{post.title}</Link>
-    </li>
-  ))}
-</ul>
-
+        {posts.map((post) => (
+          <li key={post.id}>
+            <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

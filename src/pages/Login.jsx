@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { AuthContext } from "../App";
 
 function Login() {
-
   const { login } = useContext(AuthContext);
 
   return (
