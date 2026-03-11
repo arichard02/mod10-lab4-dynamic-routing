@@ -5,7 +5,7 @@ function BlogDetails() {
 
   const { slug } = useParams();
 
-  const post = posts.find(p => p.slug === slug);
+  const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
     return <h2>Post not found</h2>;
